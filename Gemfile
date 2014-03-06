@@ -15,7 +15,7 @@ do_options = {}
 do_options[:git] = "#{DATAMAPPER}/do#{REPO_POSTFIX}" if ENV['DO_GIT'] == 'true'
 
 gem 'do_postgres',   DO_VERSION, do_options.dup
-gem 'dm-do-adapter', DM_VERSION,
+gem 'dm-do-adapter', '~> 1.2.0',
   SOURCE  => "#{DATAMAPPER}/dm-do-adapter#{REPO_POSTFIX}",
   :branch => CURRENT_BRANCH
 
